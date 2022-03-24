@@ -33,10 +33,7 @@ public class Sketch extends PApplet {
     draw_section8();
   }
 
-
-  /**
-   * Draw the outlines for all sections
-   */
+  
   public void draw_section_outlines(){
     stroke(0);
     noFill();
@@ -54,9 +51,8 @@ public class Sketch extends PApplet {
     rect(450, 0, 150, 150);
   }
   
-  /**
-   * draws the bottom left section
-   */
+
+  // Draws the 1st section 
   public void draw_section1(){
     float fltX = 0;
     float fltY = 0;
@@ -77,10 +73,7 @@ public class Sketch extends PApplet {
     }
   }
 
-  /**
-   * Use the modulus operator and an if statement to select the color
-   * Don't loop from 30 to 60 to shift everything over, just add 300 to x.
-   */
+  // Draws the 2nd section
   public void draw_section2(){
     float fltX = 0;
     float fltY = 0;
@@ -108,10 +101,7 @@ public class Sketch extends PApplet {
     }
   }
 
-  /**
-   * Use the modulus operator and an if/else statement to select the color.
-   * Don't use multiple 'if' statements.
-   */
+  // Draws the 3rd section
   public void draw_section3(){
     float fltX = 0;
     float fltY = 0;
@@ -138,9 +128,7 @@ public class Sketch extends PApplet {
     }
   }
 
-  /**
-   * Use the modulus operator and just one 'if' statement to select the color.
-   */
+  // Draws the 4th section
   public void draw_section4(){
     float fltX = 0;
     float fltY = 0;
@@ -174,9 +162,7 @@ public class Sketch extends PApplet {
     }
   }
 
-  /**
-   * Do NOT use 'if' statements to complete 5-8. Manipulate the loops instead
-   */
+  // Draws the 5th section
   public void draw_section5(){
     float fltX = 0;
     float fltY = 0;
@@ -193,6 +179,7 @@ public class Sketch extends PApplet {
     }
   }
 
+  // Draws the 6th section
   public void draw_section6(){
     float fltX = 0;
     float fltY = 0;
@@ -209,6 +196,7 @@ public class Sketch extends PApplet {
     }
   }
 
+  // Draws the 7th section
   public void draw_section7(){
     float fltX = 0;
     float fltY = 0;
@@ -224,7 +212,8 @@ public class Sketch extends PApplet {
       }
     }
   }
-  
+
+  // Draws the 8th section
   public void draw_section8(){
     float fltX = 0;
     float fltY = 0;
