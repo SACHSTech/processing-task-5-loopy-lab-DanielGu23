@@ -20,7 +20,7 @@ public class Sketch extends PApplet {
 
   public void draw() {
 
-    // Draw these functions
+    // Draw functions
     draw_section_outlines();
     draw_section1();
     draw_section2();
@@ -58,12 +58,12 @@ public class Sketch extends PApplet {
     float fltY = 0;
     
     // Nested loop for 30 rows and 30 columns
-    for(int intColumn = 0; intColumn < 30; intColumn++){
-      for(int intRow = 0; intRow < 30; intRow++){
+    for (int intColumn = 0; intColumn < 30; intColumn++){
+      for (int intRow = 0; intRow < 30; intRow++){
 
         // Add distance that boxes must move
-        fltX = 5/2 + (5 * intColumn);  
-        fltY = 305/2 + (5 * intRow); 
+        fltX = 5 / 2 + (5 * intColumn);  
+        fltY = 305 / 2 + (5 * intRow); 
 
         // Fill boxes with white
         fill(255);
@@ -79,10 +79,10 @@ public class Sketch extends PApplet {
     float fltY = 0;
 
     // Nested loop
-    for(int intColumn = 0; intColumn < 30; intColumn++){
-      for(int intRow = 0; intRow < 30; intRow++){
-        fltX = 305/2 + (5 * intColumn);  
-        fltY = 305/2 + (5 * intRow); 
+    for (int intColumn = 0; intColumn < 30; intColumn++){
+      for (int intRow = 0; intRow < 30; intRow++){
+        fltX = 305 / 2 + (5 * intColumn);  
+        fltY = 305 / 2 + (5 * intRow); 
         
         // Fill with white if column number is odd (starts at 0)
         if (intColumn % 2 == 0){
@@ -106,10 +106,10 @@ public class Sketch extends PApplet {
     float fltX = 0;
     float fltY = 0;
 
-    for(int intColumn = 0; intColumn < 30; intColumn++){
-      for(int intRow = 0; intRow < 30; intRow++){
-        fltX = 605/2 + (5 * intColumn);  
-        fltY = 305/2 + (5 * intRow); 
+    for (int intColumn = 0; intColumn < 30; intColumn++){
+      for (int intRow = 0; intRow < 30; intRow++){
+        fltX = 605 / 2 + (5 * intColumn);  
+        fltY = 305 / 2 + (5 * intRow); 
         
         // Fill with black if row number is odd
         if (intRow % 2 == 0){
@@ -133,10 +133,10 @@ public class Sketch extends PApplet {
     float fltX = 0;
     float fltY = 0;
 
-    for(int intColumn = 0; intColumn < 30; intColumn++){
-      for(int intRow = 0; intRow < 30; intRow++){
-        fltX = 905/2 + (5 * intColumn);  
-        fltY = 305/2 + (5 * intRow); 
+    for int intColumn = 0; intColumn < 30; intColumn++){
+      for (int intRow = 0; intRow < 30; intRow++){
+        fltX = 905 / 2 + (5 * intColumn);  
+        fltY = 305 / 2 + (5 * intRow); 
 
         // Fill with black if row number is odd
         if (intRow % 2 == 0){
@@ -168,10 +168,10 @@ public class Sketch extends PApplet {
     float fltY = 0;
 
     // Draws triangle by manipulating inner loop's initial value
-    for(int intColumn = 29; intColumn >= 0; intColumn--){
-      for(int intRow = 29 - intColumn; intRow <= 30; intRow++){
-        fltX = 5/2 + (5 * intColumn);  
-        fltY = 5/2 + (5 * intRow); 
+    for (int intColumn = 29; intColumn >= 0; intColumn--){
+      for (int intRow = 30 - intColumn; intRow <= 30; intRow++){
+        fltX = 5 / 2 + (5 * intColumn);  
+        fltY = 5 / 2 + (5 * intRow); 
         fill(255);
         noStroke();
         rect(fltX, fltY, (float)(5/2), (float)(5/2));
@@ -185,10 +185,10 @@ public class Sketch extends PApplet {
     float fltY = 0;
 
     // Draws triangle by manipulating inner loop's lower limit
-    for(int intColumn = 29; intColumn >= 0; intColumn--){
-      for(int intRow = 29; intRow >= intColumn; intRow--){
-        fltX = 305/2 + (5 * intColumn);  
-        fltY = 5/2 + (5 * intRow); 
+    for (int intColumn = 29; intColumn >= 0; intColumn--){
+      for (int intRow = 29; intRow >= intColumn; intRow--){
+        fltX = 305 / 2 + (5 * intColumn);  
+        fltY = 5 / 2 + (5 * intRow); 
         fill(255);
         noStroke();
         rect(fltX, fltY, (float)(5/2), (float)(5/2));
@@ -202,10 +202,10 @@ public class Sketch extends PApplet {
     float fltY = 0;
 
     // Draws triangle by manipulating inner loop's initial value
-    for(int intColumn = 0; intColumn < 30; intColumn++){
-      for(int intRow = 29 - intColumn; intRow >= 0; intRow--){
-        fltX = 605/2 + (5 * intColumn);  
-        fltY = 5/2 + (5 * intRow); 
+    for (int intColumn = 0; intColumn < 30; intColumn++){
+      for (int intRow = 29 - intColumn; intRow >= 0; intRow--){
+        fltX = 605 / 2 + (5 * intColumn);  
+        fltY = 5 / 2 + (5 * intRow); 
         fill(255);
         noStroke();
         rect(fltX, fltY, (float)(5/2), (float)(5/2));
@@ -219,8 +219,8 @@ public class Sketch extends PApplet {
     float fltY = 0;
 
     // Draws triangle by manipulating inner loop's lower limit
-    for(int intRow = 0; intRow < 30; intRow++){
-      for(int intColumn = 29; intColumn >= intRow; intColumn--){
+    for (int intRow = 0; intRow < 30; intRow++){
+      for (int intColumn = 29; intColumn >= intRow; intColumn--){
         fltX = 905/2 + (5 * intColumn);  
         fltY = 5/2 + (5 * intRow); 
         fill(255);
