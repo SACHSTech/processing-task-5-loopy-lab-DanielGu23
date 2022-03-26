@@ -39,13 +39,13 @@ public class Sketch extends PApplet {
     noFill();
 
     // Draw bottom row boxes
-    rect(0,150, 150, 150);
+    rect(0, 150, 150, 150);
     rect(150, 150, 150, 150);
     rect(300, 150, 150, 150);
     rect(450, 150, 150, 150);
 
     // Draw top row boxes
-    rect(0,0, 150, 150);
+    rect(0, 0, 150, 150);
     rect(150, 0, 150, 150);
     rect(300, 0, 150, 150);
     rect(450, 0, 150, 150);
@@ -68,7 +68,7 @@ public class Sketch extends PApplet {
         // Fill boxes with white
         fill(255);
         noStroke();
-        rect(fltX, fltY, (float)(5/2), (float)(5/2));
+        rect(fltX, fltY, (float)(5 / 2), (float)(5 / 2));
       }
     }
   }
