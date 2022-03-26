@@ -133,7 +133,7 @@ public class Sketch extends PApplet {
     float fltX = 0;
     float fltY = 0;
 
-    for int intColumn = 0; intColumn < 30; intColumn++){
+    for (int intColumn = 0; intColumn < 30; intColumn++){
       for (int intRow = 0; intRow < 30; intRow++){
         fltX = 905 / 2 + (5 * intColumn);  
         fltY = 305 / 2 + (5 * intRow); 
